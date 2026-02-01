@@ -1,0 +1,30 @@
+/* Base variables */
+:root {
+  --bg: #ffffff;
+  --text: #1f2937; /* gray-800 */
+  --muted: #6b7280; /* gray-500 */
+  --brand: #16a34a; /* green-600 */
+  --brand-dark: #166534; /* green-800 */
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+@layer base {
+  body {
+    @apply bg-white text-gray-800 antialiased;
+  }
+  a {
+    @apply text-brand hover:text-green-700 no-underline;
+  }
+}
+
+@layer utilities {
+  .container-base {
+    @apply container mx-auto max-w-7xl;
+  }
+  .section {
+    @apply py-8 sm:py-12;
+  }
+}

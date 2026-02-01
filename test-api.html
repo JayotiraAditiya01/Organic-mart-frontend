@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>API Test</title>
+</head>
+<body>
+    <h1>Testing Search API</h1>
+    <div id="output"></div>
+    <script>
+        const API_BASE_URL = 'http://localhost:5000/api';
+        const query = 'banana';
+        
+        const params = new URLSearchParams({
+            q: query.trim(),
+            category: '',
+            limit: 30,
+            includeExternal: 'true'
+        });
+
+        console.log('Testing fetch to:', `${API_BASE_URL}/products/search?${params}`);
+        
+        fetch(`${API_BASE_URL}/products/search?${params}`, {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
+        .then(res => {
+            console.log('Response status:', res.status);
+            return res.json();
+        })
+        .then(data => {
+            console.log('Data received:', data);
+            document.getElementById('output').innerHTML = `
+                <h2>Success!</h2>
+                <p>Found: ${data.totalResults} products</p>
+                <pre>${JSON.stringify(data, null, 2)}</pre>
+            `;
+        })
+        .catch(err => {
+            console.error('Error:', err);
+            document.getElementById('output').innerHTML = `<h2>Error: ${err.message}</h2>`;
+        });
+    </script>
+</body>
+</html>

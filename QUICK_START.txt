@@ -1,0 +1,90 @@
+╔════════════════════════════════════════════════════════════════╗
+║     🌿 ORGANIC E-COMMERCE IMAGE DOWNLOADER - QUICK START      ║
+╚════════════════════════════════════════════════════════════════╝
+
+📸 WHAT YOU'LL GET:
+   ✅ 150 HD images total
+   ✅ 30 images per category
+   ✅ Professional e-commerce quality
+   ✅ No watermarks, royalty-free
+   ✅ Categories: Fruits, Vegetables, Dry Fruits, Dairy, Grains
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🚀 FASTEST METHOD (PEXELS - RECOMMENDED):
+
+1️⃣  Get API Key (FREE):
+    → https://www.pexels.com/api/
+    → Sign up → Copy API key
+
+2️⃣  Install Dependencies:
+    cd frontend
+    npm install axios
+
+3️⃣  Edit Script:
+    Open: download-pexels-images.js
+    Replace: YOUR_PEXELS_API_KEY_HERE
+    With: Your actual API key
+
+4️⃣  Run Download:
+    node download-pexels-images.js
+
+5️⃣  Wait ~10-15 minutes
+    ☕ Grab a coffee while it downloads!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📁 OUTPUT LOCATION:
+   frontend/public/images/products/
+   ├── fruits/        (30 images)
+   ├── vegetables/    (30 images)
+   ├── dry-fruits/    (30 images)
+   ├── dairy/         (30 images)
+   └── grains/        (30 images)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎨 ALTERNATIVE (UNSPLASH):
+   1. Get key: https://unsplash.com/developers
+   2. Edit: download-images.js
+   3. Run: node download-images.js
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✋ MANUAL DOWNLOAD SITES:
+   📸 Pexels.com
+   📸 Unsplash.com
+   📸 Pixabay.com
+   📸 Freepik.com
+
+Search terms: "organic [product] white background"
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+❓ TROUBLESHOOTING:
+   ❌ "API key invalid" → Check you copied the full key
+   ❌ "axios not found" → Run: npm install axios
+   ❌ Rate limit hit → Wait 1 hour, script will resume
+   ❌ Permission error → Check folder write permissions
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📖 FULL GUIDE: IMAGE_DOWNLOAD_GUIDE.md
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+💡 PRO TIPS:
+   → Pexels is easier (no attribution needed)
+   → Run during off-peak hours for speed
+   → Keep originals as backup
+   → Optimize images before production deployment
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎯 READY? LET'S GO!
+
+   cd frontend
+   npm install axios
+   node download-pexels-images.js
+
+╚════════════════════════════════════════════════════════════════╝
